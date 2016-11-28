@@ -1,0 +1,23 @@
+{
+  "name": "solshal-email-digest",
+  "version": "1.0.0",
+  "description": "Solshal email digest service",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weblancaster/solshal-email-digest.git"
+  },
+  "author": "Michael Lancaster",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/weblancaster/solshal-email-digest/issues"
+  },
+  "homepage": "https://github.com/weblancaster/solshal-email-digest#readme",
+  "dependencies": {
+    "mongoose": "^4.7.0"
+  }
+}
