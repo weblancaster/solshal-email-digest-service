@@ -5,8 +5,9 @@ const moment = require('moment');
 const config = require('./lib/config/index');
 const digestCollection = require('./lib/jobs/digest');
 
-let digestTimer;
-const digestDelay = moment.duration(1, 'm').asMilliseconds(); // 1 minute delay
+// TODO: code not in use but for future refence when implementing auto-send (cron like)
+// let digestTimer;
+// const digestDelay = moment.duration(1, 'm').asMilliseconds();
 
 // DB setup/start
 const uriDBString = config[process.env.NODE_ENV].db.uri;
@@ -16,15 +17,16 @@ MongoClient.connect(uriDBString, config.dbOptions, (err, db) => {
     console.log(err);
     process.exit(1);
   }
-  startInterval(db);
+  digestCollection(db);
 });
 
-function startInterval(db) {
-  digestTimer = setInterval(() => {
-    console.log('Starting schedule!');
-    digestCollection(db);
-  }, digestDelay);
-}
+// TODO: code not in use but for future refence when implementing auto-send (cron like)
+// function startInterval(db) {
+//   digestTimer = setInterval(() => {
+//     console.log('Starting schedule!');
+//     digestCollection(db);
+//   }, digestDelay);
+// }
 
 // the code below will listen to
 // when the application exits
