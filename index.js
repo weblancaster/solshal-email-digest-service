@@ -21,7 +21,7 @@ MongoClient.connect(uriDBString, config.dbOptions, (err, db) => {
 
 function startInterval(db) {
   digestTimer = setInterval(() => {
-    console.log('called!');
+    console.log('Starting schedule!');
     digestCollection(db);
   }, digestDelay);
 }
