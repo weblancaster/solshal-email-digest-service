@@ -42,7 +42,8 @@ function exitHandler(options, err) {
     process.exit();
   }
 
-  clearInterval(digestTimer);
+  // TODO: code not in use but for future refence when implementing auto-send (cron like)
+  // clearInterval(digestTimer);
 }
 
 process.on('exit', exitHandler.bind(null, { cleanup: true }));
