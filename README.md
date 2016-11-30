@@ -1,2 +1,1 @@
-# solshal-email-digest
-Solshal email digest service 
+# solshal email digest service
