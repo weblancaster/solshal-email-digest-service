@@ -1,0 +1,1 @@
+0 0 * * FRI NODE_ENV=production node index.js
