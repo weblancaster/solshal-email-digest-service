@@ -21,7 +21,7 @@
   "dependencies": {
     "lodash": "^4.17.2",
     "moment": "^2.17.0",
-    "mongodb": "^2.2.11",
+    "mongodb": "^6.0.0",
     "sparkpost": "^2.0.1"
   }
 }
