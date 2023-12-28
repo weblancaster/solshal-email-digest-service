@@ -19,9 +19,9 @@
   },
   "homepage": "https://github.com/weblancaster/solshal-email-digest#readme",
   "dependencies": {
-    "lodash": "^4.17.2",
-    "moment": "^2.17.0",
-    "mongodb": "^2.2.11",
-    "sparkpost": "^2.0.1"
+    "lodash": "4.17.21",
+    "moment": "2.30.1",
+    "mongodb": "2.2.36",
+    "sparkpost": "2.1.4"
   }
 }
